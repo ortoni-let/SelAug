@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="username" value="standard_user"></parameter>
+	<parameter name="URL" value="https://www.saucedemo.com/"></parameter>
+	<test name="Chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="week6.day1.LoginServiceNow" />
+			<class name="week6.day1.LoginSwagLabs"/>
+		</classes>
+	</test> <!-- Test -->
+
+	<!-- <test name="Edge">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="week5.day2.LoginSauceLab" />
+		</classes>
+	</test> Test -->
+</suite> <!-- Suite -->
