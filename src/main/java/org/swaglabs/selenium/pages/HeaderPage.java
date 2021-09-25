@@ -10,7 +10,7 @@ public class HeaderPage extends Common{
 	}
 	
 	public void openMenu(){
-		driver.findElementById("react-burger-menu-btn1").click();
+		driver.findElementById("react-burger-menu").click();
 	}
 	
 	public void openCart() {
