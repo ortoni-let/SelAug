@@ -11,8 +11,12 @@ import utils.Common;
 
 public class Tc001_Logintest extends Common{
 	@BeforeTest
-	void setData(){
-		ExcelFileName = "login";		
+	public void setData(){
+		testcaseDec = "Swag labs login test";
+		author = "Balaji";
+		category = "smoke";
+		testcaseName ="TC001";
+		ExcelFileName = "tc002";	
 	}
 	@Test(dataProvider = "loginSauce")
 	public void myLoginTest(String user, String pass) {
