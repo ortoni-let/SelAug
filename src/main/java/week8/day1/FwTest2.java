@@ -8,14 +8,14 @@ import org.testng.annotations.Test;
 
 import utils.Common;
 
-public class FwTest extends Common {
+public class FwTest2 extends Common {
 	
 	@BeforeTest
 	public void init() {
-		testcaseDec = "Swag labs login test";
-		author = "Balaji";
-		category = "smoke";
-		testcaseName ="TC001 - Sign up";
+		testcaseDec = "Swag labs login test 2";
+		author = "Swati";
+		category = "Sanity";
+		testcaseName ="TC002 - Login";
 	}
 	
 	@Test

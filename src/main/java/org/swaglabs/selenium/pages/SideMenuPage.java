@@ -1,5 +1,6 @@
 package org.swaglabs.selenium.pages;
 
+import org.labs.selenium.framework.Locators;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import utils.Common;
@@ -10,7 +11,8 @@ public class SideMenuPage extends Common{
 	}
 	
 	public void clickLogOut() {
-		driver.findElementById("logout_sidebar_link").click();
+		click(findElementBy(Locators.id, "logout_sidebar_link"));
+//		driver.findElementById("").click();
 	}
 
 }

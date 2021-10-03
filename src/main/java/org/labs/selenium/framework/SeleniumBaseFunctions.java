@@ -82,6 +82,7 @@ public class SeleniumBaseFunctions extends Reporter implements Browser, Element{
 			ele.clear();
 			ele.sendKeys(data);
 			reportStep("The Data :"+data+" entered Successfully", "pass");
+			// log4js
 		} catch (ElementNotInteractableException e) {
 			reportStep("The Element "+ele+" is not Interactable", "fail");
 			throw new RuntimeException();
@@ -320,12 +321,11 @@ public class SeleniumBaseFunctions extends Reporter implements Browser, Element{
 	public void acceptAlert() {
 		String text = "";		
 		try {
-			wait = new WebDriverWait(driver, 10);
 			wait.until(ExpectedConditions.alertIsPresent());
 			Alert alert = driver.switchTo().alert();
 			text = alert.getText();
 			alert.accept();
-			reportStep("The alert "+text+" is accepted.", "pass");
+			reportStep("The alert "+text+" is accepted.", "pass", false);
 		} catch (NoAlertPresentException e) {
 			reportStep("There is no alert present.", "fail");
 		} catch (WebDriverException e) {
